@@ -52,7 +52,7 @@
                             <div class="card pt-3 w-100 border-0 shadow">
                                 <div class="d-flex justify-content-center">
                                     <a class="img-container" href="{{ route('users.show', $member->id) }}">
-                                        <img src="{{ mix($member -> img_path)}}" class=" rounded-circle " alt="">
+                                        <img src="{{ mix($member -> img_path)}}"  alt="">
                                     </a>
                                 </div>
                                 <div class="card-body">
