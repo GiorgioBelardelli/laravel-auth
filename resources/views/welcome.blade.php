@@ -14,7 +14,7 @@
             </svg> --}}
             </div>
             <h1 class="display-5 fw-bold">
-                Nostro Portflio!
+                Nostro Portflio
             </h1>
 
             <p class="col-md-8 fs-4">Scopri dei piccoli programmatori full stack truffaldini!</p>
