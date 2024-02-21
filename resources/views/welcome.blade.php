@@ -24,26 +24,82 @@
     </div>
 
     <div class="content">
-        
-            <div class="text-center">
-                <h3>Chi siamo?</h3>
-                <div class="bg-white py-4 my-4">
-                    <a href="" class="text-decoration-none text-dark cursor-none text-center d-flex align-items-center justify-content-center py-4 m-4 rounded " id="about_us">
-                        <p class="m-0">Dei semplici , almeno ci proviamo, programmatori junior....Lasciateci almeno la speranza per dire e
-                            dimostrare di cosa siamo capaci.</p>
-                    </a>
-                </div>
-                    <script>
-                        document.getElementById('about_us').addEventListener('click', function(event) {
-                            event.preventDefault(); // Impedisce l'azione predefinita del clic del mouse
-                        });
-                    </script>
-                <h3 class="mt-4">La Squad</h3>
-                <div class="mt-5 pt-5">
-                    {{-- PROVA DI RICHIAMO PER LA SEZIONE ABOUT US --}}
-                    <a href="#about_us">asda</a>
-                </div>
+
+        <div class="text-center">
+            <h3>Chi siamo?</h3>
+            <div class="bg-white py-4 my-4">
+                <a href=""
+                    class="text-decoration-none text-dark cursor-none text-center d-flex align-items-center justify-content-center py-4 m-4 rounded "
+                    id="about_us">
+                    <p class="m-0">Dei semplici , almeno ci proviamo, programmatori junior....Lasciateci almeno la
+                        speranza per dire e
+                        dimostrare di cosa siamo capaci.</p>
+                </a>
             </div>
-    
+            <script>
+                document.getElementById('about_us').addEventListener('click', function(event) {
+                    event.preventDefault(); // Impedisce l'azione predefinita del clic del mouse
+                });
+            </script>
+            <h3 class="mt-4">La Squad</h3>
+            <section class="bg-white">
+                <div class="container">
+                    <div class="row mt-4 py-4">
+                        <div class="col-4 on_mouse on_mouse">
+                            <div class="card pt-3 w-100 border-0 shadow">
+                                <div class="d-flex justify-content-center">
+                                    <a class="img-container">
+                                        <img src="{{ mix('public/img/Gio.jpg') }}" class=" rounded-circle " alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Giorgio <strong>Gi&ograve; </strong>Belardelli</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the
+                                        bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-4 on_mouse">
+                            <div class="card pt-3 w-100 border-0 shadow">
+                                <div class="d-flex justify-content-center">
+                                    <a class="img-container">
+                                        <img src="{{ mix('public/img/FotoProfilo.jpeg') }}" class=" rounded-circle " alt="">
+                                    </a>
+                                    
+                                </div>
+                                <div class="card-body">
+                                    <h4>Domenico <strong>Mimmo </strong>Forlano</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the
+                                        bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-4 on_mouse">
+                            <div class="card pt-3 w-100 border-0 shadow">
+                                <div class="d-flex justify-content-center">
+                                    <a class="img-container ">
+                                        <img src="{{ mix('public/img/Sporco.jpg') }}" class=" rounded-circle " alt="">
+                                    </a>
+                                    
+                                </div>
+                                <div class="card-body">
+                                    <h4>Kaid Gabriele <strong>Paglia </strong>Abu Madegem</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the
+                                        bulk of the card's content.</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="mt-5 pt-5">
+                {{-- PROVA DI RICHIAMO PER LA SEZIONE ABOUT US --}}
+                <a href="#about_us">asda</a>
+            </div>
+        </div>
+
     </div>
 @endsection

@@ -7,6 +7,21 @@
         text-align: center;
     }
   }
+
+.img-container{
+    width: 60%;
+    height: 250px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+}
+.on_mouse:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
   @media (min-width: 767px) { 
     #app{
         .width_modificata{
