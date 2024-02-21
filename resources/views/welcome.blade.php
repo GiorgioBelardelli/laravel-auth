@@ -4,6 +4,12 @@
     @vite(['resources/js/app.js'])
 @endsection
 @section('content')
+<h1>
+    Pokemon
+    @auth
+     - <a href="{{ route('pokemon.create') }}">CREATE</a>
+    @endauth
+</h1>
     <div class="jumbotron p-5 mb-4 bg-light rounded-3">
         <div class="width_modificata mx-auto py-5">
             <div class="logo_laravel">
@@ -52,7 +58,7 @@
                             <div class="card pt-3 w-100 border-0 shadow">
                                 <div class="d-flex justify-content-center">
                                     <a class="img-container" href="{{ route('users.show', $member->id) }}">
-                                        <img src="{{ mix($member -> img_path)}}"  alt="">
+                                        <img src="{{ mix($member -> img_path)}}" class="rounded-circle" alt="">
                                     </a>
                                 </div>
                                 <div class="card-body">
