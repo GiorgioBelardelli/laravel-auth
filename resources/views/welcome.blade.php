@@ -5,10 +5,7 @@
 @endsection
 @section('content')
 <h1>
-    Pokemon
-    @auth
-     - <a href="{{ route('pokemon.create') }}">CREATE</a>
-    @endauth
+
 </h1>
     <div class="jumbotron p-5 mb-4 bg-light rounded-3">
         <div class="width_modificata mx-auto py-5">
