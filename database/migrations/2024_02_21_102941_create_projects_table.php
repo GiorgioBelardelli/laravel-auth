@@ -17,9 +17,11 @@ return new class extends Migration
             $table->id();
 
             $table->string('name');
+            $table->string('nickname');
             $table->string('description');
-            $table->string('author');
             $table->string('img_path');
+            $table->string('telephone');
+            $table->string('email');
 
             $table->timestamps();
         });

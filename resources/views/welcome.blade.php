@@ -45,53 +45,34 @@
             <section class="bg-white">
                 <div class="container">
                     <div class="row mt-4 py-4">
+                        @foreach($memberList as $member)
+
                         <div class="col-md-4 col-12 on_mouse on_mouse">
                             <div class="card pt-3 w-100 border-0 shadow">
                                 <div class="d-flex justify-content-center">
                                     <a class="img-container">
-                                        <img src="{{ mix('public/img/Gio.jpg') }}" class=" rounded-circle " alt="">
+                                        <img src="{{ mix($member -> img_path)}}" class=" rounded-circle " alt="">
                                     </a>
                                 </div>
                                 <div class="card-body">
-                                    <h4>Giorgio <strong>Gi&ograve; </strong>Belardelli</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the
-                                        bulk of the card's content.</p>
+                                    <h4>{{$member -> name }}</h4>
+                                    <strong> {{ $member -> nickname }} </strong>
+                                    <br>
+                                    <i>Full Stack Web Developer</i>
+                                    <div class="d-flex justify-content-center py-2 gap-3 align-items-center h-100">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span>{{ $member -> telephone }}</span>
+                                    </div>
+                                    <div class="d-flex justify-content-center py-2 gap-3 align-items-center h-100">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span>{{ $member -> email }}</span>
+                                    </div>
+                                    <p class="card-text"> {{ $member -> description }}</p>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="col-md-4 col-12 on_mouse">
-                            <div class="card pt-3 w-100 border-0 shadow">
-                                <div class="d-flex justify-content-center">
-                                    <a class="img-container">
-                                        <img src="{{ mix('public/img/FotoProfilo.jpeg') }}" class=" rounded-circle " alt="">
-                                    </a>
-                                    
-                                </div>
-                                <div class="card-body">
-                                    <h4>Domenico <strong>Mimmo </strong>Forlano</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the
-                                        bulk of the card's content.</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-4 col-12 on_mouse">
-                            <div class="card pt-3 w-100 border-0 shadow">
-                                <div class="d-flex justify-content-center">
-                                    <a class="img-container ">
-                                        <img src="{{ mix('public/img/Sporco.jpg') }}" class=" rounded-circle " alt="">
-                                    </a>
-                                    
-                                </div>
-                                <div class="card-body">
-                                    <h4>Kaid Gabriele <strong>Paglia </strong>Abu Madegem</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the
-                                        bulk of the card's content.</p>
-                                </div>
-                            </div>
-                           
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </section>
