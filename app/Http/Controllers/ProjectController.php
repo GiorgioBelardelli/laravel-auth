@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Project;
+use App\Models\SingleProject;
 
 class ProjectController extends Controller
 {
@@ -89,8 +90,9 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
-        $project = Project::find($id);
-        return view('pages.show', compact('project') );
+        $member = Project::find($id);
+        $singleProject=$member-> containedItems;
+        return view('pages.show', compact(['member','singleProject']) );
     }
 
     /**

@@ -5,11 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Project extends Model
+class SingleProject extends Model
 {
     use HasFactory;
-    public function containedItems()
+    protected $table = 'single_projects'; 
+    public function container()
     {
-        return $this->hasMany(SingleProject::class,'projects_id',);
+        return $this->belongsTo(Project::class);
     }
 }

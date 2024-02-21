@@ -1,0 +1,42 @@
+.img-container {
+    width: 25rem;
+    height: 25rem;
+}
+
+// ACCORDION ----------------------------
+.accordion-button:not(.collapsed) {
+    background-color: white;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+}
+
+// FINE  ACCORDION ----------------------------
+
+// FONT POPPINS
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+// FINE  POPPINS ----------------------------
+.auto_width{
+    max-width: fit-content;
+}
+
+.width_paragrafo{
+    max-width: 400px;
+}

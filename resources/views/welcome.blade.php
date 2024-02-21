@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('head')
     <title>Portfolio</title>
+    @vite(['resources/js/app.js'])
 @endsection
 @section('content')
     <div class="jumbotron p-5 mb-4 bg-light rounded-3">
@@ -50,7 +51,7 @@
                         <div class="col-md-4 col-12 on_mouse on_mouse">
                             <div class="card pt-3 w-100 border-0 shadow">
                                 <div class="d-flex justify-content-center">
-                                    <a class="img-container">
+                                    <a class="img-container" href="{{ route('users.show', $member->id) }}">
                                         <img src="{{ mix($member -> img_path)}}" class=" rounded-circle " alt="">
                                     </a>
                                 </div>
