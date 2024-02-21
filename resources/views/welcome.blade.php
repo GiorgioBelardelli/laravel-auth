@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('head')
-    <title>Home</title>
+    <title>Portfolio</title>
 @endsection
 @section('content')
     <div class="jumbotron p-5 mb-4 bg-light rounded-3">
