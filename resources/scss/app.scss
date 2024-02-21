@@ -1,1 +1,26 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+.cursor-none {
+    cursor: text;
+    user-select: text;
+    p{
+        width: fit-content;
+        text-align: center;
+    }
+  }
+  @media (min-width: 767px) { 
+    #app{
+        .width_modificata{
+            width: 75%;
+        }
+    }
+  }
+  @media (max-width: 767px) { 
+    #app{
+        .width_modificata{
+            width: 100%;
+        }
+        .container{
+            width: 100%;
+        }
+    }
+  }
