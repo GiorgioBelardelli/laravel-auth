@@ -45,7 +45,7 @@
             <section class="bg-white">
                 <div class="container">
                     <div class="row mt-4 py-4">
-                        <div class="col-4 on_mouse on_mouse">
+                        <div class="col-md-4 col-12 on_mouse on_mouse">
                             <div class="card pt-3 w-100 border-0 shadow">
                                 <div class="d-flex justify-content-center">
                                     <a class="img-container">
@@ -60,7 +60,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 on_mouse">
+                        <div class="col-md-4 col-12 on_mouse">
                             <div class="card pt-3 w-100 border-0 shadow">
                                 <div class="d-flex justify-content-center">
                                     <a class="img-container">
@@ -76,7 +76,7 @@
                             </div>
                             
                         </div>
-                        <div class="col-4 on_mouse">
+                        <div class="col-md-4 col-12 on_mouse">
                             <div class="card pt-3 w-100 border-0 shadow">
                                 <div class="d-flex justify-content-center">
                                     <a class="img-container ">

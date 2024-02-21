@@ -28,8 +28,8 @@
             width: 75%;
         }
     }
-  }
-  @media (max-width: 767px) { 
+}
+@media (max-width: 767px) { 
     #app{
         .width_modificata{
             width: 100%;
@@ -37,5 +37,8 @@
         .container{
             width: 100%;
         }
+    }
+    .img-container{
+        width: 80%;
     }
   }
