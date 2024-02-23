@@ -16,12 +16,11 @@ class SingleProjectTableSeeder extends Seeder
      */
     public function run()
     {
-        // Get all containers (you might adjust this based on your actual logic)
+       
         $projects = Project::all();
 
-        // Loop through projects and add SingleProjects
+        
         $projects->each(function ($project) {
-            // Create a SingleProject item for each project
             SingleProject::factory() ->count(3) -> create([
                 'projects_id' => $project->id,
             ]);
